@@ -1,156 +1,110 @@
+
+//background image
 var bgTab=["img/bgi1.jpg","img/bgi2.jpg","img/bgi3.jpg","img/bgi4.jpg","img/bgi5.jpg","img/bgi6.jpg"];
-var text=["BLUE","ORANGE","GREEN","RED","PINK","YELLOW"];
+
+//numéros des image (sur les boutons)
+var text=["1","2","3","4","5","6"];
+
+//les variables
 var bgSection=document.querySelector(".section1");
+
+var compteur=document.getElementById("nbrImg");
+
 var btnleft=document.querySelector(".btn1");
 var btnmiddle=document.querySelector(".btn2");
 var btnright=document.querySelector(".btn3");
 var btndisplayleft=document.querySelector(".btn0");
 var btndisplayright=document.querySelector(".btn4");
 
-bgSection.style.backgroundImage="url("+bgTab[2]+")";
+//la première image à afficher
 
 
+//les numéros de départ
+var bgNbr=1;
 
-var colorNum=2;
+bgSection.style.backgroundImage="url("+bgTab[bgNbr]+")";
 
-btnleft.style.setProperty("--color-btn", text[colorNum-1]);
-btnmiddle.style.setProperty("--color-btn", text[colorNum]);
-btnright.style.setProperty("--color-btn", text[colorNum+1]);
+btnleft.innerHTML=text[bgNbr-1];
+btnmiddle.innerHTML=text[bgNbr];
+btnright.innerHTML=text[bgNbr+1];
 
-btnleft.style.setProperty("--color-shadow",text[colorNum-1]);
-btnmiddle.style.setProperty("--color-shadow","none");
-btnright.style.setProperty("--color-shadow",text[colorNum+1]);
-
-btnleft.style.setProperty("--color-btn-hover", text[colorNum-1]);
-btnmiddle.style.setProperty("--color-btn-hover", text[colorNum]);
-btnright.style.setProperty("--color-btn-hover", text[colorNum+1]);
-
-btnleft.style.setProperty("--btn-cursor", "pointer");
-btnmiddle.style.setProperty("--btn-cursor", "auto");
-btnright.style.setProperty("--btn-cursor", "pointer");
-
-
+//numéro de l'image affiché
+compteur.innerHTML=text[bgNbr]+"/6";
 
 function change(num){
 
    if (num==0){
-        if(colorNum>1){
-            colorNum--;
-            bgSection.style.backgroundImage="url("+bgTab[colorNum]+")";
-
-            
-
-            btnleft.style.setProperty("--btn-cursor", "pointer");
-            btnmiddle.style.setProperty("--btn-cursor", "auto");
-            btnright.style.setProperty("--btn-cursor", "pointer");
-
+        if(bgNbr>1){
+            bgNbr--;
+            bgSection.style.backgroundImage="url("+bgTab[bgNbr]+")";
+            compteur.innerHTML=text[bgNbr]+"/6";
             document.querySelector(".btn0").classList.add("firsttoright");
             document.querySelector(".btn1").classList.add("toright");
             document.querySelector(".btn2").classList.add("toright");
             document.querySelector(".btn3").classList.add("cancel-last");
     
-     setTimeout(function(){
-        document.querySelector(".btn0").classList.remove("firsttoright");
-        document.querySelector(".btn1").classList.remove("toright");
-        document.querySelector(".btn2").classList.remove("toright");
-        document.querySelector(".btn3").classList.remove("cancel-last");
+            setTimeout(function(){
+                document.querySelector(".btn0").classList.remove("firsttoright");
+                document.querySelector(".btn1").classList.remove("toright");
+                document.querySelector(".btn2").classList.remove("toright");
+                document.querySelector(".btn3").classList.remove("cancel-last");
 
-        btnleft.style.setProperty("--color-btn", text[colorNum-1]);
-        btnmiddle.style.setProperty("--color-btn", text[colorNum]);
-        btnright.style.setProperty("--color-btn", text[colorNum+1]);
-
-
-    
-    }, 1000);
+                btnleft.innerHTML=text[bgNbr-1];
+                btnmiddle.innerHTML=text[bgNbr];
+                btnright.innerHTML=text[bgNbr+1];
+            
+            }, 1000);
+           
 
         }
-        else if(colorNum==1){
-            bgSection.style.backgroundImage="url("+bgTab[colorNum-1]+")";
-
-            
-
-            btnleft.style.setProperty("--color-btn", text[colorNum-1]);
-            btnmiddle.style.setProperty("--color-btn", text[colorNum]);
-            btnright.style.setProperty("--color-btn", text[colorNum+1]);
-
-            btnleft.style.setProperty("--btn-cursor", "auto");
-            btnmiddle.style.setProperty("--btn-cursor", "pointer");
-            btnright.style.setProperty("--btn-cursor", "pointer");
-
-            
+        else if(bgNbr==1){
+            bgSection.style.backgroundImage="url("+bgTab[bgNbr-1]+")";
+            compteur.innerHTML=text[bgNbr-1]+"/6";
         }
-
-
+        
 
     }
     
     if(num==1){
-        bgSection.style.backgroundImage="url("+bgTab[colorNum]+")";
-
-
-        btnleft.style.setProperty("--color-btn", text[colorNum-1]);
-        btnmiddle.style.setProperty("--color-btn", text[colorNum]);
-        btnright.style.setProperty("--color-btn", text[colorNum+1]);
-
-        btnleft.style.setProperty("--btn-cursor", "pointer");
-        btnmiddle.style.setProperty("--btn-cursor", "auto");
-        btnright.style.setProperty("--btn-cursor", "pointer");
+            bgSection.style.backgroundImage="url("+bgTab[bgNbr]+")";
+            compteur.innerHTML=text[bgNbr]+"/6";
+            btnleft.innerHTML=text[bgNbr-1];
+            btnmiddle.innerHTML=text[bgNbr];
+            btnright.innerHTML=text[bgNbr+1];    
    }
 
    if(num==2){
-        if(colorNum<bgTab.length-2){
-            colorNum++;
-            bgSection.style.backgroundImage="url("+bgTab[colorNum]+")";
-
-            
-
-            btnleft.style.setProperty("--btn-cursor", "pointer");
-            btnmiddle.style.setProperty("--btn-cursor", "auto");
-            btnright.style.setProperty("--btn-cursor", "pointer");
+        if(bgNbr<bgTab.length-2){
+            bgNbr++;
+            bgSection.style.backgroundImage="url("+bgTab[bgNbr]+")";
+            compteur.innerHTML=text[bgNbr]+"/6";
 
             document.querySelector(".btn1").classList.add("cancel");
             document.querySelector(".btn2").classList.add("toleft");
             document.querySelector(".btn3").classList.add("toleft");
             document.querySelector(".btn4").classList.add("lasttoleft");
     
-     setTimeout(function(){
-        document.querySelector(".btn1").classList.remove("cancel");
-        document.querySelector(".btn2").classList.remove("toleft");
-        document.querySelector(".btn3").classList.remove("toleft");
-        document.querySelector(".btn4").classList.remove("lasttoleft");
+            setTimeout(function(){
 
-        btnleft.style.setProperty("--color-btn", text[colorNum-1]);
-        btnmiddle.style.setProperty("--color-btn", text[colorNum]);
-        btnright.style.setProperty("--color-btn", text[colorNum+1]);
-    
-    }, 1000);
-        }
-        else if(colorNum==bgTab.length-2){
-            bgSection.style.backgroundImage="url("+bgTab[colorNum+1]+")";
+                document.querySelector(".btn1").classList.remove("cancel");
+                document.querySelector(".btn2").classList.remove("toleft");
+                document.querySelector(".btn3").classList.remove("toleft");
+                document.querySelector(".btn4").classList.remove("lasttoleft");
+
+                btnleft.innerHTML=text[bgNbr-1];
+                btnmiddle.innerHTML=text[bgNbr];
+                btnright.innerHTML=text[bgNbr+1];
+            
+            }, 1000);
 
             
-
-            btnleft.style.setProperty("--color-btn", text[colorNum-1]);
-            btnmiddle.style.setProperty("--color-btn", text[colorNum]);
-            btnright.style.setProperty("--color-btn", text[colorNum+1]);
-
-            btnleft.style.setProperty("--btn-cursor", "pointer");
-            btnmiddle.style.setProperty("--btn-cursor", "pointer");
-            btnright.style.setProperty("--btn-cursor", "auto");
+        }
+        else if(bgNbr==bgTab.length-2){
+            bgSection.style.backgroundImage="url("+bgTab[bgNbr+1]+")";
+            compteur.innerHTML=text[bgNbr+1]+"/6";
+           
         }
 
-    }; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+    }
+    console.log(bgNbr); 
+};
