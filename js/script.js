@@ -16,14 +16,14 @@ var btnright=document.querySelector(".btn3");
 var btndisplayleft=document.querySelector(".btn0");
 var btndisplayright=document.querySelector(".btn4");
 
-//la première image à afficher
 
 
-//les numéros de départ
+
+
 var bgNbr=1;
-
+//la première image à afficher
 bgSection.style.backgroundImage="url("+bgTab[bgNbr]+")";
-
+//les numéros de départ
 btnleft.innerHTML=text[bgNbr-1];
 btnmiddle.innerHTML=text[bgNbr];
 btnright.innerHTML=text[bgNbr+1];
