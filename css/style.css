@@ -210,52 +210,98 @@ nav ul a:hover{
     position: relative;
    }
 
-/* END of Style section 1 (Background) */
-
-/* Style section 2 (Our staff) */
-/* END of Style section 2 (Our staff) */
-
-.staff-title{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: #113946;
+/* section 2 */
+.servicesTitle, .staff-title{
+    font-family: "AvenirNextBold",Arial,Helvetica,sans-serif;
+    background-color: white;
+    box-shadow:  0 0 10px #e4c493;
+    width: 600px;
+    height: 250px;
+    position: relative;
+    margin-top: 10px;
+    
 }
-.section2{
+.animation0{
+    right:600px;
+    
+}
+.animation{
+    right:-370px;
+    transition: right 2s;
+}
+.servicesTitle .servicesTitle-container{
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.servicesTitle .servicesTitle-container p{
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+   height: 500px;
+   width: 95%;
+   margin: 10px auto;
+}
+.services .service{
+    width: 19%;
+    
+    padding: 25px;
+}
+.services .service:nth-child(1), .services .service:nth-child(3){
+    height: 280px;
+    transition: height 0.5s;
+    background-color:  #EAD7BB; 
+    opacity: 0.9; 
+}
+.services .service:nth-child(2), .services .service:nth-child(4){
+    height: 320px;
+    transition: height 0.5s;
+    background-color:  #d2c1a7;
+    opacity: 0.8;
+}
+.services .service:nth-child(1):hover, .services .service:nth-child(3):hover, .services .service:nth-child(2):hover, .services .service:nth-child(4):hover{
+    height: 450px;
+    box-shadow: 0 0 10px #e4c493;
+    opacity: 1;
+}
+
+/* Style section 3 (Our staff) */
+
+.section3{
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 5%;
-   gap: 5%;
+   flex-wrap: wrap;
+   width: 90%;
+   margin: 0 auto;
    
 }
-.section2 div{
+.section3 div{
     border-radius: 10px;
     background-color: #EAD7BB;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: 20px;
-   text-align: left;
-   padding: 10px;
-   opacity: 0.7;
+   text-align: center;
+   padding: 20px;
+   opacity: 0.9;
+   width: 20%;
+   margin: 80px auto;
 }
-.section2 div img{
+.section3 div img{
     border-radius: 50%;
     position: relative;
     bottom: 80px;
-    left: 30%;
 }
-.section2 div p{
+.section3 div h3{
     position: relative;
-    bottom: 50px;
-}
-.section2 div p a{
-    font-size: 16px;
-    color: blue;
-}
-.section2 div p a:hover{
-    color: black;
-    font-style: italic;
+    bottom: 40px;
 }
 
 /* Style footer */
@@ -313,25 +359,25 @@ i{
     .section1-container p{
         font-size: 18px;
     }
-    .section2{
+    .section3{
         flex-wrap: wrap;
     }
-    .section2 div{
+    .section3 div{
         height: 160px;
         margin-bottom: 30px;
         padding-top: 20px;
     }
-    .section2 div img{
+    .section3 div img{
         width: 80px;
         height: 80px;
         bottom: 10px;
         left: 70%;
     }
-    .section2 div p{
+    .section3 div p{
         font-size: 0.8em;
         bottom: 100px;
     }
-    .section2 div p a{
+    .section3 div p a{
         font-size: 0.8em;
     }
 
@@ -345,21 +391,21 @@ i{
     nav ul{
         display: none;
     }
-    .section2{
+    .section3{
         display: flex;
         flex-direction: column;
     }
-    .section2 div p{
+    .section3 div p{
         padding-top: 30px;
     }
-    .section2 div img{
+    .section3 div img{
         width: 70px;
         height: 70px;
     }
-    .section2 div p{
+    .section3 div p{
         font-size: 0.7em;
     }
-    .section2 div p a{
+    .section3 div p a{
         font-size: 0.9em;
     }
     #color{
