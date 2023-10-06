@@ -72,21 +72,11 @@ nav ul a:hover{
     align-items: center;
     font-size: 150%;
 }
-.section1-container h1{
-    margin-top: 150px;
-    width: 200px;
-    padding: 5px;
-    text-align: center;
-    color: rgb(0, 0, 160);
-    background-color: #fcf2de;
-    border-radius: 5px;
-    opacity: 0.7;
-}
 .section1-container h6{
-    margin-top: 200px;
+    margin-top: 350px;
     background-color: #fcf2de;
     color: rgb(0, 0, 160);
-    width: 30px;
+    width: 40px;
     text-align: center;
     opacity: 0.7;
     border-radius: 25%;
@@ -210,36 +200,38 @@ nav ul a:hover{
     position: relative;
    }
 
-/* section 2 */
-.servicesTitle, .staff-title{
+/* présentation services et staff */
+.servicesTitle, .staffTitle{
     font-family: "AvenirNextBold",Arial,Helvetica,sans-serif;
     background-color: white;
     box-shadow:  0 0 10px #e4c493;
     width: 600px;
-    height: 250px;
+    height: 200px;
     position: relative;
-    margin-top: 10px;
-    
-}
-.animation0{
     right:600px;
-    
+    margin-top: 10px;
 }
 .animation{
     right:-370px;
-    transition: right 2s;
+    transition: right 1s;
 }
-.servicesTitle .servicesTitle-container{
+.servicesTitle .servicesTitle-container, .staffTitle .staffTitle-container{
     padding: 20px;
     margin: 0 auto;
     text-align: center;
+   opacity: 0;
+    transition: opacity 1s;
 }
-
-.servicesTitle .servicesTitle-container p{
+.servicesTitle .servicesTitle-container h1, .staffTitle .staffTitle-container h1{
+color: red;
+font-size:xx-large;
+}
+.servicesTitle .servicesTitle-container p, .staffTitle .staffTitle-container p{
     line-height: 30px;
     text-align: center;
     margin-top: 20px;
 }
+/* section services */
 .services{
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +264,7 @@ nav ul a:hover{
     opacity: 1;
 }
 
-/* Style section 3 (Our staff) */
+/* section staff */
 
 .section3{
    display: flex;
@@ -306,37 +298,54 @@ nav ul a:hover{
 
 /* Style footer */
 footer{
-    display: flex;;
-   background-color: #EAD7BB;
-    height: 50px;
-    width: 100%;
-    align-items: center;
     margin-top: auto;
+    text-align: center;
+}
+footer .logo{
+    width: 200px;
+}
+.footerPart1{
+    height: 300px;
+    padding: 50px;
+    background-color: rgb(65, 105, 165);
+    color: white;
+}
+ .footerPart1 p{
+    margin: 50px auto;
+}
+footer input{
+    width: 180px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.9;
+}
+footer button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d2c1a7;
+    font-weight: bold;
 }
 
-footer ul{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    width: 400px;
-    height: 100%;
-    justify-content: space-around;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+footer button:hover{
+color: rgb(65, 105, 165);
+cursor: pointer;
+background-color: white;
 }
-footer ul li{
-    height:70%;
-    width: 100%;
-    text-align: center;
-  padding: 5px;
+footer .footerPart2{
+    height: 200px;
+}
+.footerPart2 img{
+    width: 20px;
+    margin: 50px 15px;
+    opacity: 0.8;
 }
 footer span{
-    margin-left: auto;
-    margin-right: 2px;
-    text-align: center;
-    color: rgb(0, 0, 129);
-}
-i{
-    display: none;
+    font-size: small;
+    opacity: 0.8;
 }
 
 /* END of Style footer */
