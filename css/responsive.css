@@ -1,0 +1,67 @@
+/* tablet version */
+@media (max-width: 992px){
+    /* navbar */
+    nav ul{
+        flex-direction: column;
+        height: 150px;
+        width: 25%;
+    }
+    /* section services */
+    .services{
+        height: auto;
+        margin: 20px auto;
+
+    }
+    .services .service{
+        width: 80%;
+        text-align: center;
+        padding: 20px;
+    }
+    .services .service p{
+        margin-top: 20px;
+    }
+    .services .service:nth-child(1), .services .service:nth-child(3), .services .service:nth-child(2), .services .service:nth-child(4){
+        height: 200px;
+    }
+    .services .service:nth-child(1):hover, .services .service:nth-child(3):hover{
+        height: 200px;
+        box-shadow: none;
+        background-color: rgb(242, 234, 211);
+    }
+     
+ .services .service:nth-child(2):hover, .services .service:nth-child(4):hover{
+        height: 200px;
+        box-shadow: none;
+        background-color: rgb(223, 215, 191);
+    }
+   /* section staff */
+   .section3{
+    height: auto;
+    margin: 20px auto;
+ }
+ .section3 div{
+    padding: 20px;
+    opacity: 0.9;
+    width: 43%;
+    margin: 10px auto;
+    height: 350px;
+    transition: height 0.5s;
+ }
+ .section3 div:hover{
+     background-color: rgb(223, 215, 191);
+     box-shadow: none;
+     height: 350px;
+ }
+ .section3 div img{
+     border-radius: 50%;
+     position: relative;
+     bottom: 0;
+ }
+ .section3 div h3{
+     color: rgb(46, 67, 116);
+     margin-bottom: 20px;
+ }
+ .section3 div p{
+     margin: auto;
+ }
+}

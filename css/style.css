@@ -27,7 +27,7 @@ nav ul{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    width: 70%;
+    width: 60%;
     height: 50px;
     margin: 5px;
     padding: 2px;
@@ -292,26 +292,30 @@ font-size:xx-large;
    flex-wrap: wrap;
    width: 90%;
    margin: 0 auto;
-   height: 650px;
+   height: 700px;
    
 }
 .section3 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     background-color: rgb(223, 215, 191);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: 20px;
-   text-align: center;
    padding: 20px;
    opacity: 0.9;
    width: 20%;
    margin: 80px auto;
-   height: 380px;
+   height: 400px;
    transition: height 0.5s;
 }
 .section3 div:hover{
     background-color: #F9F7F7;
     box-shadow:  0 0 10px #DBE2EF;
-    height: 430px;
+    height: 500px;
+    cursor: context-menu;
 }
 .section3 div img{
     border-radius: 50%;
@@ -319,9 +323,11 @@ font-size:xx-large;
     bottom: 80px;
 }
 .section3 div h3{
-    position: relative;
-    bottom: 40px;
     color: rgb(46, 67, 116);
+    margin-bottom: 20px;
+}
+.section3 div p{
+    margin: auto;
 }
 
 /* Style footer */
