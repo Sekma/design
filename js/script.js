@@ -1,6 +1,6 @@
 
 //background image
-var bgTab=["img/bgi1.jpg","img/bgi2.jpg","img/bgi3.jpg","img/bgi4.jpg","img/bgi5.jpg","img/bgi6.jpg"];
+var bgTab=["img/bg0.jpg","img/bg1.jpg","img/bg2.jpg","img/bg3.jpg","img/bg4.jpg","img/bg5.jpg"];
 
 //numéros des image (sur les boutons)
 var text=["1","2","3","4","5","6"];

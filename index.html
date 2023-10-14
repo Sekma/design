@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Company-2</title>
+        <title>Design</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="keywords" content="website, vitrine, design, digital, developpement, web, professional">
-        <meta name="description" content="Company">
+        <meta name="description" content="design">
         <meta name="author" content="Sekma">
         <link rel="icon" href="img/logo.ico">
         <link rel="stylesheet" href="css/style.css">
         <Link rel="stylesheet" href="css/responsive.css">
     </head>
-    <body id="page" style="background-image: url(img/bgBody.jpg);">
+    <body id="page" style="background-image: url(img/bg-body.jpg);">
         
         <section class="section1">
-        
             <nav>
                 <img src="img/logo.png" alt="logo" class="logo">
                 <ul>
+                    <a href="#works"><li>Works</li></a>
                     <a href="#servicesTitle"><li>About</li></a>
                     <a href="#staffTitle"><li>Staff</li></a>
                     <a href="#contact"><li>Contact</li></a>
@@ -26,12 +26,8 @@
             </nav>
 
             <div class="section1-container">
-
-            
-                
                 <h6 id="nbrImg">1/6</h6>
-                <div class="mouve">
-                    
+                <div class="mouve">  
                     <span class="btn0"></span>
                     <div class="btns">
                     <span class="btn1" onclick="change(0)">1</span>
@@ -39,103 +35,127 @@
                     <span class="btn3" onclick="change(2)">3</span>
                     </div>
                     <span class="btn4"></span>
-                    
                 </div>
-               
-            </div> 
-             
+            </div>      
         </section>
-        <section id="servicesTitle" class="servicesTitle">
+
+        <section class="works" id="works">
+            <div class="worksPresentation">
+                <h1>Some Of Our Work</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+            </div>
+            <div class="gallery">
+                <figure>
+                    <img src="img/works/design1.jpg" alt="figure1">
+                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/works/design2.jpg" alt="figure1">
+                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/works/nature1.jpeg" alt="figure1">
+                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/works/nature2.jpeg" alt="figure1">
+                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/works/pro1.jpg" alt="figure1">
+                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/works/pro2.jpg" alt="figure1">
+                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div id="servicesTitle" class="servicesTitle">
             <div class="servicesTitle-container">
                 <h1>Our Services</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
             </div>
-        </section>
-        
-        
+        </div>       
 
         <section class="services">
             <div class="service">
-                <img src="img/exhibitions.png" alt="calendrier" width="50px" height="50px">
+                <img src="img/services/exhibitions.png" alt="calendrier" width="50px" height="50px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
             </div>
             <div class="service">
-                <img src="img/technics.png" alt="technics" width="50px" height="50px">
+                <img src="img/services/technics.png" alt="technics" width="50px" height="50px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
             </div>
             <div class="service">
-                <img src="img/videos.png" alt="videos" width="50px" height="50px">
+                <img src="img/services/videos.png" alt="videos" width="50px" height="50px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
             </div>
             <div class="service">
-                <img src="img/interviews.png" alt="interviews" width="50px" height="50px">
+                <img src="img/services/interviews.png" alt="interviews" width="50px" height="50px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
             </div>
         </section>
 
-        <section id="staffTitle" class="staffTitle">
+        <div id="staffTitle" class="staffTitle">
             <div class="staffTitle-container">
                 <h1>Our Staff</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="section3">
-            
+        <section class="sectionStaff">  
             <div>
-                <img src="img/profil1.jpg" alt="photo" width="140px" height="140px">
+                <img src="img/staff/profil1.jpg" alt="photo" width="140px" height="140px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec.</p>
             </div>
             <div>
-                <img src="img/profil2.jpg" alt="photo" width="140px" height="140px">
+                <img src="img/staff/profil2.jpg" alt="photo" width="140px" height="140px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec.</p>
             </div>
             <div>
-                <img src="img/profil3.jpg" alt="photo" width="140px" height="140px">
+                <img src="img/staff/profil3.jpg" alt="photo" width="140px" height="140px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec.</p>
             </div>
             <div>
-                <img src="img/profil4.jpg" alt="photo" width="140px" height="140px">
+                <img src="img/staff/profil4.jpg" alt="photo" width="140px" height="140px">
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec.</p>
             </div>
         </section>
         
-        <footer id="contact">
-          
+        <footer id="contact">          
                 <div class="footerPart1">
                     <img src="img/logo.png" alt="logo" class="logo">
                     <h2>Lorem ipsum dolor sit amet</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
-                    <form action="mailto:sekma.mohamed.hedi@gmail.com" class="sendEmail">
-    
+                    <form action="mailto:sekma.mohamed.hedi@gmail.com" class="sendEmail">    
                         <input type="name" placeholder="Your Name">
-                        <input type="text" placeholder="Email Address">
-                        
+                        <input type="text" placeholder="Email Address">                      
                         <button>Sign Up</button>
                     </form>
                 </div>
                 <div class="footerPart2">
                     <div>
-                        <img src="img/icons8-service-clients-50.png" alt="tel">
-                        <img src="img/twitter.png" alt="twitter">
-                        <img src="img/facebook.png" alt="facebook">
-                        <img src="img/instagram.png" alt="instagram">
-                    
+                        <img src="img/contacts/icons8-service-clients-50.png" alt="tel">
+                        <img src="img/contacts/twitter.png" alt="twitter">
+                        <img src="img/contacts/facebook.png" alt="facebook">
+                        <img src="img/contacts/instagram.png" alt="instagram">                   
                     </div>
-                    <span>Company-2 - 2023 &copy; All Rights Reserved Created By SEKMA</span>
-                </div>
-            
+                    <span>Design - 2023 &copy; All Rights Reserved Created By SEKMA</span>
+                </div>          
         </footer>
+
     <script src="js/animation.js"></script>
-        <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
         
     </body>
 </html>

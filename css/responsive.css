@@ -35,11 +35,11 @@
         background-color: rgb(223, 215, 191);
     }
    /* section staff */
-   .section3{
+   .sectionStaff{
     height: auto;
     margin: 20px auto;
  }
- .section3 div{
+ .sectionStaff div{
     padding: 20px;
     opacity: 0.9;
     width: 43%;
@@ -47,21 +47,21 @@
     height: 350px;
     transition: height 0.5s;
  }
- .section3 div:hover{
+ .sectionStaff div:hover{
      background-color: rgb(223, 215, 191);
      box-shadow: none;
      height: 350px;
  }
- .section3 div img{
+ .sectionStaff div img{
      border-radius: 50%;
      position: relative;
      bottom: 0;
  }
- .section3 div h3{
+ .sectionStaff div h3{
      color: rgb(46, 67, 116);
      margin-bottom: 20px;
  }
- .section3 div p{
+ .sectionStaff div p{
      margin: auto;
  }
 }
