@@ -3,8 +3,16 @@
     /* navbar */
     nav ul{
         flex-direction: column;
-        height: 150px;
-        width: 25%;
+        height: 250px;
+        gap: 10px;
+        width: 30%;
+    }
+    /* section works */
+    .gallery figure{
+        width: 40%;
+    }
+    .servicesTitle, .staffTitle{
+        width: 80%;
     }
     /* section services */
     .services{
@@ -26,13 +34,13 @@
     .services .service:nth-child(1):hover, .services .service:nth-child(3):hover{
         height: 200px;
         box-shadow: none;
-        background-color: rgb(242, 234, 211);
+        background-color: rgb(221, 230, 237);
     }
      
  .services .service:nth-child(2):hover, .services .service:nth-child(4):hover{
         height: 200px;
         box-shadow: none;
-        background-color: rgb(223, 215, 191);
+        background-color: rgb(157, 178, 191);
     }
    /* section staff */
    .sectionStaff{
@@ -42,13 +50,13 @@
  .sectionStaff div{
     padding: 20px;
     opacity: 0.9;
-    width: 43%;
-    margin: 10px auto;
+    width: 35%;
+    margin: 20px auto;
     height: 350px;
     transition: height 0.5s;
  }
  .sectionStaff div:hover{
-     background-color: rgb(223, 215, 191);
+     background-color: rgba(82, 109, 130, 0.5);
      box-shadow: none;
      height: 350px;
  }
@@ -67,6 +75,19 @@
 }
 
 /* mobile version */
-@media (max-width: 992px){
-    
+@media (max-width: 767px){
+    nav .logo{
+        width: 40%;
+    }
+    nav ul{
+        width: 30%;
+    }
+    /* section works */
+    .gallery figure{
+        width: 90%;
+    }
+    .servicesTitle, .staffTitle{
+       font-size: small;
+        line-height: 2px;
+    }
 }
