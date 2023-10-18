@@ -11,6 +11,7 @@
         <link rel="icon" href="img/logo.ico">
         <link rel="stylesheet" href="css/style.css">
         <Link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/toggleMenu.css">
     </head>
     <body id="page" style="background-image: url(img/bg-body.jpg);">
         
@@ -23,6 +24,13 @@
                     <a href="#staffTitle"><li>Staff</li></a>
                     <a href="#contact"><li>Contact</li></a>
                 </ul>
+                <div class="burger-toggle">
+                    <div for="burger-toggle" class="burger" onclick="toggleMenu()">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                  </div>
             </nav>
 
             <div class="section1-container">
@@ -156,6 +164,7 @@
 
     <script src="js/animation.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/toggleMenu.js"></script>
         
     </body>
 </html>
