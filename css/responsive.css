@@ -48,17 +48,9 @@
     margin: 20px auto;
  }
  .sectionStaff div{
-    padding: 20px;
-    opacity: 0.9;
     width: 35%;
     margin: 20px auto;
     height: 350px;
-    transition: height 0.5s;
- }
- .sectionStaff div:hover{
-     background-color: rgba(82, 109, 130, 0.5);
-     box-shadow: none;
-     height: 350px;
  }
  .sectionStaff div img{
      border-radius: 50%;
@@ -66,11 +58,7 @@
      bottom: 0;
  }
  .sectionStaff div h3{
-     color: rgb(46, 67, 116);
-     margin-bottom: 20px;
- }
- .sectionStaff div p{
-     margin: auto;
+     margin-bottom: 10px;
  }
 }
 
@@ -88,6 +76,32 @@
     }
     .servicesTitle, .staffTitle{
        font-size: small;
-        line-height: 2px;
+    }
+    .worksPresentation h1, .servicesTitle .servicesTitle-container h1, .staffTitle .staffTitle-container h1{
+        font-size: medium;
+    }
+    .worksPresentation p, .servicesTitle .servicesTitle-container p, .staffTitle .staffTitle-container p{
+        line-height: 20px;
+    }
+    /* section staff */
+    .sectionStaff{
+        flex-direction: column;
+    }
+    .sectionStaff div{
+        width: 80%;
+    }
+    .sectionStaff div img{
+        width: 100px;
+        height: 100px;
+    }
+    /* footer */
+    .footerPart1{
+        height: 450px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }

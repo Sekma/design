@@ -365,6 +365,7 @@ font-size:xx-large;
    font-family: Verdana;
    font-size: 20px;
    padding: 20px;
+   opacity: 0.9;
    width: 20%;
    margin: 100px auto 50px;
    height: 400px;
@@ -439,84 +440,3 @@ footer span{
 
 /* END of Style footer */
 
-
-/* 
-@media (max-width: 992px){
-    nav h1{
-        width: 120px;
-    }
- nav ul{
-    height: 80%;
- }
-    .user{
-        margin-right: 5px;
-    }
-    .section1-container h1{
-        font-size: 22px;
-    }
-    .section1-container p{
-        font-size: 18px;
-    }
-    .sectionStaff{
-        flex-wrap: wrap;
-    }
-    .sectionStaff div{
-        height: 160px;
-        margin-bottom: 30px;
-        padding-top: 20px;
-    }
-    .sectionStaff div img{
-        width: 80px;
-        height: 80px;
-        bottom: 10px;
-        left: 70%;
-    }
-    .sectionStaff div p{
-        font-size: 0.8em;
-        bottom: 100px;
-    }
-    .sectionStaff div p a{
-        font-size: 0.8em;
-    }
-
-
-} 
-
-@media (max-width: 767px){
-    nav h1{
-        width: 90px;
-    }
-    nav ul{
-        display: none;
-    }
-    .sectionStaff{
-        display: flex;
-        flex-direction: column;
-    }
-    .sectionStaff div p{
-        padding-top: 30px;
-    }
-    .sectionStaff div img{
-        width: 70px;
-        height: 70px;
-    }
-    .sectionStaff div p{
-        font-size: 0.7em;
-    }
-    .sectionStaff div p a{
-        font-size: 0.9em;
-    }
-    #color{
-        display: none;
-        height: 0;
-    }
-    footer ul{
-        display: none;
-    }
-    i{
-        font-size: 24px;
-        width: 35px;
-        text-align: center;
-        display: block;
-    }
-} */
